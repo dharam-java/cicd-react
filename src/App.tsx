@@ -1,11 +1,6 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -79,7 +74,7 @@ function App() {
 
       <section
         id="center"
-        className="min-h-[calc(100vh-80px)] flex items-center justify-center px-6 py-20 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white"
+        className="min-h-[calc(100vh-80px)] flex items-center justify-center px-6 py-20 bg-linear-to-br from-slate-950 via-slate-900 to-blue-950 text-white"
       >
         <div className="max-w-6xl mx-auto text-center">
 
@@ -92,7 +87,7 @@ function App() {
           {/* Hero Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
             Build. Test. Deploy.
-            <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400">
+            <span className="block mt-2 text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-400 to-green-400">
               Faster with CI/CD
             </span>
           </h1>
