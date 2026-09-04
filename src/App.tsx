@@ -74,14 +74,16 @@ function App() {
 
       <section
         id="center"
-        className="min-h-[calc(100vh-80px)] flex items-center justify-center px-6 py-20 bg-linear-to-br from-slate-950 via-slate-900 to-blue-950 text-white"
+        className="min-h-screen w-full flex items-center justify-center px-6 py-16 bg-slate-950 text-white"
       >
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="w-full max-w-6xl mx-auto text-center">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full border border-blue-400/30 bg-blue-500/10 text-blue-300 text-sm">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-            Automated CI/CD Pipeline
+          <div className="flex justify-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full border border-blue-400/30 bg-blue-500/10 text-blue-300 text-sm">
+              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+              Automated CI/CD Pipeline
+            </div>
           </div>
 
           {/* Hero Heading */}
@@ -93,14 +95,14 @@ function App() {
           </h1>
 
           {/* Description */}
-          <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-slate-300 leading-relaxed">
+          <p className="w-full mx-auto mt-6 text-center text-lg md:text-xl text-slate-300 leading-relaxed">
             Automate your software delivery pipeline with continuous integration
             and continuous deployment. Build reliable applications, run automated
             tests, and deploy to production with confidence.
           </p>
 
           {/* Pipeline */}
-          <div className="mt-12 flex flex-wrap justify-center items-center gap-3 md:gap-5">
+          <div className="mt-12 w-full flex flex-wrap justify-center items-center gap-3 md:gap-5">
 
             <div className="px-5 py-3 rounded-xl bg-slate-800 border border-slate-700 shadow-lg">
               <span className="text-blue-400 font-semibold">Git Push</span>
@@ -129,53 +131,72 @@ function App() {
             <div className="px-5 py-3 rounded-xl bg-slate-800 border border-slate-700 shadow-lg">
               <span className="text-green-400 font-semibold">Production</span>
             </div>
+
           </div>
 
           {/* Buttons */}
-          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+
             <button
               type="button"
-              className="px-7 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 transition-all duration-300 font-semibold shadow-lg shadow-blue-600/25"
+              className="w-full sm:w-auto px-7 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 transition-all duration-300 font-semibold shadow-lg shadow-blue-600/25"
             >
               Get Started
             </button>
 
             <button
               type="button"
-              className="px-7 py-3 rounded-xl border border-slate-600 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300 font-semibold"
+              className="w-full sm:w-auto px-7 py-3 rounded-xl border border-slate-600 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300 font-semibold"
             >
               View Pipeline
             </button>
+
           </div>
 
           {/* Features */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
 
+            {/* Feature 1 */}
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
               <div className="text-3xl mb-3">⚡</div>
-              <h3 className="text-lg font-bold">Automated Builds</h3>
+
+              <h3 className="text-lg font-bold">
+                Automated Builds
+              </h3>
+
               <p className="mt-2 text-sm text-slate-400">
                 Automatically build your application whenever new code is pushed.
               </p>
             </div>
 
+            {/* Feature 2 */}
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
               <div className="text-3xl mb-3">🧪</div>
-              <h3 className="text-lg font-bold">Continuous Testing</h3>
+
+              <h3 className="text-lg font-bold">
+                Continuous Testing
+              </h3>
+
               <p className="mt-2 text-sm text-slate-400">
                 Run automated tests to catch issues before they reach production.
               </p>
             </div>
 
+            {/* Feature 3 */}
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
               <div className="text-3xl mb-3">🚀</div>
-              <h3 className="text-lg font-bold">Fast Deployment</h3>
+
+              <h3 className="text-lg font-bold">
+                Fast Deployment
+              </h3>
+
               <p className="mt-2 text-sm text-slate-400">
                 Deploy tested applications quickly and consistently across environments.
               </p>
             </div>
 
           </div>
+
         </div>
       </section>
     </>
