@@ -41,14 +41,14 @@ function App() {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a
                 href="#contact"
                 className="text-sm font-medium text-gray-300 transition hover:text-cyan-400"
               >
                 Contact Us
               </a>
-            </li>
+            </li> */}
 
             {/* Login Button */}
             <li>
@@ -88,7 +88,7 @@ function App() {
 
           {/* Hero Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
-            Build. Test. Deploy.
+            Build.Test.Deploy.
             <span className="block mt-2 text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-400 to-green-400">
               Faster with CI/CD
             </span>
