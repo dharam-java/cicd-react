@@ -50,7 +50,7 @@ pipeline {
                     )
                     mkdir "${DEPLOY_DIR}"
                 """
-                bat 'xcopy /E /H /C /I /Y build\\* "%DEPLOY_DIR%\\"'
+                bat 'xcopy /E /H /C /I /Y dist\\* "%DEPLOY_DIR%\\"'
             }
         }
     }
