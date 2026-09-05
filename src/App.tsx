@@ -41,14 +41,14 @@ function App() {
               </a>
             </li>
 
-            {/* <li>
+            <li>
               <a
                 href="#contact"
                 className="text-sm font-medium text-gray-300 transition hover:text-cyan-400"
               >
                 Contact Us
               </a>
-            </li> */}
+            </li>
 
             {/* Login Button */}
             <li>
